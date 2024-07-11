@@ -97,6 +97,7 @@ console.log(tomAndJerry);
     return(
         <div className="lesson-container">
             <h4>Lesson06</h4>
+            <p>Урок 'TypeScript'  часть 1' в комментариях к уроку</p>
         </div>
     )
 }
