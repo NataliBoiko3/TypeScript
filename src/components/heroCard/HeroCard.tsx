@@ -1,6 +1,7 @@
 
 
-import {IForceUser} from '../data'
+
+import { IForceUser } from '../data';
 import styles from './heroCard.module.css';
 
 interface HeroCardProps {
@@ -19,7 +20,7 @@ const HeroCard = ({ hero }: HeroCardProps) => {
       </div>
       <p>
         Lightsaber colors:{' '}
-        {hero.LightsaberColors.map((color: string, index: number) => (
+        {hero.LightsaberColors.map((color, index) => (
           <div 
             key={index}
             className={styles.lightsaberColor}
