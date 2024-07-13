@@ -1,20 +1,28 @@
-import './myInput.css'
+//import './myInput.css'
+import styles from './myInput.module.css'
 
 
-interface IMyInputProps{
-    label: string
-    type: string
-    name: string
-    placeholder: string;
+// interface IMyInputProps{
+//     label: string
+//     type?: string
+//     name: string
+//     placeholder: string;
 
-}
-
-export default function MyInput({label,type,name,placeholder}:IMyInputProps) {
+// }
+//Второй вариант интерфейса
+interface IInputProps {
+    label?: string;
+    name?: string;
+    type?: 'text' | 'password' | 'email' | 'number';
+    placeholder?: string;
+  }
   
-    return(
-        <>
-        <label className='label'>{label}</label>
-        <input type={type} name ={name}placeholder={placeholder}/>
-        </>
-    )
-}
+  export default function MyInput({ label = 'default', name='input', type='text', placeholder='default' }: IInputProps) {
+  
+    return (
+      <>
+        <label className={styles.label}>{label}</label>
+        <input type={type} name={name} placeholder={placeholder} />
+      </>
+    );
+  }

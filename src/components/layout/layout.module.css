@@ -1,0 +1,29 @@
+
+/*обертка над всеми тегами*/
+
+.page {
+    display: flex;
+    flex-direction: column;
+    /*100 относительных единиц, высчитывается от видимрй новости по высоте*/
+    min-height: 100vh;
+}
+.header {
+    width: 100%;
+    background-color: orange;
+    height: 80px;
+    padding-top: 30px;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+}
+.main{
+    flex:1
+}
+.footer {
+    width: 100%;
+    background-color: lightgray;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
