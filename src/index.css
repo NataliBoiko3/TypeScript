@@ -19,6 +19,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+header > a {
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+} 
+
 .lesson-container {
   margin: auto;
   display: flex;
@@ -27,3 +33,4 @@ code {
   width: 70%;
 
 }
+

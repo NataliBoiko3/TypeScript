@@ -20,7 +20,7 @@ const HeroCard = ({ hero }: HeroCardProps) => {
       </div>
       <p>
         Lightsaber colors:{' '}
-        {hero.LightsaberColors.map((color, index) => (
+        {hero.LightsaberColors?.map((color, index) => (
           <div 
             key={index}
             className={styles.lightsaberColor}

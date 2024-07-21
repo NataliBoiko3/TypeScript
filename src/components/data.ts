@@ -4,7 +4,7 @@ export interface IForceUser {
     name: string;
     age: number;
     isDark: boolean;
-    LightsaberColors: string[];
+    LightsaberColors ?: string[];
     image: string;
   }
   
