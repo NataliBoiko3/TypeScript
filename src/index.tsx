@@ -14,6 +14,7 @@ import MyForm from './components/myForm/MyForm';
 import HomePage from './components/homePage/HomePage';
 import MyInput from './components/myInput/MyInput';
 import MyButton from './components/myButton/MyButton';
+import Shop from './components/shop/shop';
 //import { BrowserRouter } from 'react-router-dom';
 //import App from './app/App';
 //import Lesson08 from './lessons/lesson08/Lesson08';
@@ -33,6 +34,7 @@ root.render(
       <Route path='/' element={<Layout/>}>
       
   <Route path='/'element={<HomePage/>}/>
+  <Route path='/shop' element={<Shop/>}/>
    <Route path='/gender-form'element={<FormGender/>}/>
    <Route path='/robot-form'element={<RobotForm/>}/>
    <Route path='/my-form'element={<MyForm/>}/>

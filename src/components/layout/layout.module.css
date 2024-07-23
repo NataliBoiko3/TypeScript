@@ -1,29 +1,7 @@
 
 /*обертка над всеми тегами*/
 
-.page {
-    display: flex;
-    flex-direction: column;
-    /*100 относительных единиц, высчитывается от видимрй новости по высоте*/
-    min-height: 100vh;
-}
-.header {
-    width: 100%;
-    background-color: orange;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-/* .header > a {
-    text-decoration: none;
-    color: white;
-    margin-right: 20px;
-} */
-.header > a:hover {
-    text-decoration: underline;
-    
-}
+
 .main{
       /* чтобы main занимал все свободное место если контента мало */
     padding: 20px 0;  
@@ -34,15 +12,4 @@
   align-items: center;
   width: 100%;
 }
-.footer {
-    background-color: lightgray;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.active {
-    color:blue;
-    text-decoration: underline;
-}
+

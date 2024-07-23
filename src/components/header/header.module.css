@@ -1,0 +1,27 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    /*100 относительных единиц, высчитывается от видимрй новости по высоте*/
+    min-height: 100vh;
+}
+.header {
+    width: 100%;
+    background-color: orange;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header > a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+} 
+.header > a:hover {
+    text-decoration: underline;
+    
+}
+.active {
+    color:blue;
+    text-decoration: underline;
+}

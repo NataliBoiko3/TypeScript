@@ -10,9 +10,9 @@ function Layout(){
     
     return(
         <div className={styles.page}>
-<header>
+
 <Header/>
-</header>
+
 <main className={styles.main}>
     <Outlet/>
 </main>
